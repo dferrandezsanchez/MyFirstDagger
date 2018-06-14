@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_hipoteca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:elevation="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/tv_capitalPendiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/capitalPendiente"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/mesesPendiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/mesesPendientes"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/tv_diferencial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/diferencial"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/btn_hipoteca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:elevation="8dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/calcular"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/card_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:elevation="16dp"
+        android:layout_below="@+id/card_hipoteca">
+
+        <TextView
+            android:id="@+id/tv_resultado"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

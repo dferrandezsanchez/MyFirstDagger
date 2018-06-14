@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MiFirstDagger</string>
+    <string name="capitalPendiente">Capital Pendiente</string>
+    <string name="mesesPendientes">Meses Pendientes</string>
+    <string name="diferencial">Diferencial</string>
+    <string name="calcular">Calcular</string>
+</resources>
